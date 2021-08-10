@@ -1,2 +1,2 @@
 # Countries
-display countries with information and flag
+Display countries with information and flag
