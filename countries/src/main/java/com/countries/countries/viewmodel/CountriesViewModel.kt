@@ -3,7 +3,7 @@ package com.countries.countries.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.memexpress.core.network.Resource
+import com.countries.core.network.Resource
 import com.countries.countries.repository.CountriesRepository
 import com.pasindulaksara.recyclergrid.Country
 import kotlinx.coroutines.launch

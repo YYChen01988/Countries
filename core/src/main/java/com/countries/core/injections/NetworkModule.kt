@@ -1,9 +1,9 @@
-package com.memexpress.core.injections
+package com.countries.core.injections
 
 import com.core.BuildConfig
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
-import com.memexpress.core.network.DispatcherType
-import com.memexpress.core.network.ResponseHandler
+import com.countries.core.network.DispatcherType
+import com.countries.core.network.ResponseHandler
 import kotlinx.coroutines.Dispatchers
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

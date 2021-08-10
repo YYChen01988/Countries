@@ -1,7 +1,7 @@
-package com.memexpress.core.network
+package com.countries.core.network
 
 import com.google.gson.Gson
-import com.memexpress.core.network.models.ErrorResponse
+import com.countries.core.network.models.ErrorResponse
 import retrofit2.HttpException
 import java.net.SocketTimeoutException
 

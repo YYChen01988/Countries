@@ -1,11 +1,10 @@
-package com.memexpress.memes.viewmodel
+package com.countries.countries.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.memexpress.core.network.Resource
+import com.countries.core.network.Resource
 import com.countries.countries.repository.CountriesRepository
-import com.countries.countries.viewmodel.CountriesViewModel
-import com.memexpress.memes.utils.TestCoroutineRule
+import com.countries.countries.utils.TestCoroutineRule
 import com.pasindulaksara.recyclergrid.Country
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Before

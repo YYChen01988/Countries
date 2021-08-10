@@ -1,4 +1,4 @@
-package com.memexpress.core.ui.activity
+package com.countries.core.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 

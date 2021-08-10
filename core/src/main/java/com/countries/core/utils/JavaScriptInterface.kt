@@ -1,4 +1,4 @@
-package com.memexpress.core.utils
+package com.countries.core.utils
 
 import android.webkit.JavascriptInterface
 

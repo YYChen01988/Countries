@@ -2,7 +2,7 @@ package com.countries.countries.ui.activity
 
 import android.os.Bundle
 import com.countries.databinding.ActivityCountriesBinding
-import com.memexpress.core.ui.activity.BaseActivity
+import com.countries.core.ui.activity.BaseActivity
 
 class CountriesActivity : BaseActivity() {
     lateinit var activityCountriesBinding: ActivityCountriesBinding

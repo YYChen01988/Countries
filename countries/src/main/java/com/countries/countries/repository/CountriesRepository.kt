@@ -1,6 +1,6 @@
 package com.countries.countries.repository
 
-import com.memexpress.core.network.ResponseHandler
+import com.countries.core.network.ResponseHandler
 import com.countries.countries.data.service.CountriesService
 
 class CountriesRepository(

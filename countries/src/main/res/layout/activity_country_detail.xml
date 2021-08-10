@@ -1,123 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".countries.ui.activity.CountryDetailActivity">
 
-    <androidx.core.widget.NestedScrollView
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/selectedCountryName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/margin_20">
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/design_default_color_secondary_variant"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
 
             <ImageView
                 android:id="@+id/flagImage"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:contentDescription="@string/meme_image"
-                android:paddingTop="@dimen/margin_20"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop" />
 
-            <TextView
-                android:id="@+id/selectedCountryName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="@dimen/margin_20"
-                android:paddingVertical="@dimen/margin_5"
-                android:layout_marginLeft="@dimen/margin_10"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/flagImage"
-                  />
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
 
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/regionName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:paddingHorizontal="@dimen/margin_20"
-                android:paddingVertical="@dimen/margin_5"
                 android:layout_marginLeft="@dimen/margin_10"
+                android:paddingVertical="@dimen/margin_10"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/selectedCountryName"
-                  />
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <TextView
                 android:id="@+id/info1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:paddingHorizontal="@dimen/margin_20"
-                android:paddingVertical="@dimen/margin_5"
                 android:layout_marginLeft="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/margin_10"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/regionName"
-                  />
+                app:layout_constraintTop_toBottomOf="@+id/regionName" />
 
 
             <TextView
                 android:id="@+id/info2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:paddingHorizontal="@dimen/margin_20"
-                android:paddingVertical="@dimen/margin_5"
                 android:layout_marginLeft="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/margin_10"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/info1"
-                  />
+                app:layout_constraintTop_toBottomOf="@+id/info1" />
 
 
             <TextView
                 android:id="@+id/info3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:paddingHorizontal="@dimen/margin_20"
-                android:paddingVertical="@dimen/margin_5"
                 android:layout_marginLeft="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/margin_10"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/info2"
-                  />
+                app:layout_constraintTop_toBottomOf="@+id/info2" />
 
 
             <TextView
                 android:id="@+id/info4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:paddingHorizontal="@dimen/margin_20"
-                android:paddingVertical="@dimen/margin_5"
                 android:layout_marginLeft="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/margin_10"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/info3"
-                  />
-
-
+                app:layout_constraintTop_toBottomOf="@+id/info3" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.core.widget.NestedScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

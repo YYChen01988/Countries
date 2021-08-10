@@ -6,7 +6,7 @@ import android.os.Bundle
 import com.countries.countries.ui.fragment.CountriesFragment
 import com.countries.databinding.ActivityCountryDetailBinding
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
-import com.memexpress.core.ui.activity.BaseActivity
+import com.countries.core.ui.activity.BaseActivity
 
 class CountryDetailActivity : BaseActivity() {
 
@@ -35,7 +35,7 @@ class CountryDetailActivity : BaseActivity() {
 
         activityCountryDetailBinding.apply {
             GlideToVectorYou.justLoadImage( this@CountryDetailActivity, Uri.parse(flag), flagImage)
-            selectedCountryName.text = "${name} (${nativeName})"
+            selectedCountryName.title = "${name} (${nativeName})"
             regionName.text = "Region: ${subregion}, ${region}"
             info1.text = "Capital: ${capital}"
             info2.text = "Population: ${population}"

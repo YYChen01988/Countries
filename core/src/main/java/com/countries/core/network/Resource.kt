@@ -1,4 +1,4 @@
-package com.memexpress.core.network
+package com.countries.core.network
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {

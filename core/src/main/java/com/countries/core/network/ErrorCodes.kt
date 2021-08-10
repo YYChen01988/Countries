@@ -1,4 +1,4 @@
-package com.memexpress.core.network
+package com.countries.core.network
 
 enum class ErrorCodes(val code: Int) {
     SOCKET_TIME_OUT(-1),

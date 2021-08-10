@@ -4,7 +4,7 @@ apply from: '../config-android.gradle'
 android {
 
     defaultConfig {
-        applicationId "com.memexpress"
+        applicationId "com.Countries"
         versionCode 1
         versionName "1.0"
     }

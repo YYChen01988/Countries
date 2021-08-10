@@ -1,4 +1,4 @@
-package com.memexpress.memes.utils
+package com.countries.countries.utils
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

@@ -1,4 +1,4 @@
-package com.memexpress.core.network.models
+package com.countries.core.network.models
 
 import com.google.gson.annotations.SerializedName
 

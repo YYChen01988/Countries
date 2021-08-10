@@ -14,9 +14,9 @@ import com.countries.countries.ui.activity.CountryDetailActivity
 import com.countries.countries.ui.adapter.CountriesAdapter
 import com.countries.countries.viewmodel.CountriesViewModel
 import com.countries.databinding.FragmentCountriesBinding
-import com.memexpress.core.network.Status
-import com.memexpress.core.ui.activity.BaseActivity
-import com.memexpress.core.ui.fragments.BaseFragment
+import com.countries.core.network.Status
+import com.countries.core.ui.activity.BaseActivity
+import com.countries.core.ui.fragments.BaseFragment
 import com.pasindulaksara.recyclergrid.Country
 import org.koin.android.ext.android.inject
 
@@ -29,8 +29,6 @@ class CountriesFragment : BaseFragment() {
     private lateinit var navController: NavController
 
     private lateinit var fragmentCountriesBinding: FragmentCountriesBinding
-
-//    var selectedCountry: ((Country) -> Unit)? = null
 
     override fun getErrorView(): View = fragmentCountriesBinding.errorView.root
 
@@ -87,8 +85,6 @@ class CountriesFragment : BaseFragment() {
             countriesAdapter.setDataList(countries)
         }
         countriesAdapter.countryClicked = {
-//            selectedCountry?.invoke(it)
-
 
             val intent = Intent(activity, CountryDetailActivity::class.java)
             intent.putExtra("FLAG", it.flag)

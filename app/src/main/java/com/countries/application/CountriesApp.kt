@@ -1,8 +1,8 @@
 package com.countries.application
 
 import android.app.Application
-import com.memexpress.BuildConfig
-import com.memexpress.core.injections.networkModule
+import com.countries.BuildConfig
+import com.countries.core.injections.networkModule
 import com.countries.countries.injection.countriesModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

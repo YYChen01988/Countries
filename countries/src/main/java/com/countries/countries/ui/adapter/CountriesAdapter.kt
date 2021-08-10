@@ -4,7 +4,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.memexpress.core.ui.activity.BaseActivity
+import com.countries.core.ui.activity.BaseActivity
 import com.countries.databinding.ListItemCountryBinding
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
 import com.pasindulaksara.recyclergrid.Country

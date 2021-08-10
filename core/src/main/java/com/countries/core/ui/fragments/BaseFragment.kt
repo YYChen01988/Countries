@@ -1,4 +1,4 @@
-package com.memexpress.core.ui.fragments
+package com.countries.core.ui.fragments
 
 import android.view.View
 import android.widget.TextView
