@@ -71,13 +71,13 @@ class CountriesFragment : BaseFragment() {
         countriesViewModel.fetchAllCountries()
     }
 
-    private fun loadData(memes: List<Country>?) {
-        memes?.let {
-            loadMemesInRecyclerView(it)
+    private fun loadData(countries: List<Country>?) {
+        countries?.let {
+            loadCountriesInRecyclerView(it)
         } ?: showError(getString(R.string.error_loading_data))
     }
 
-    private fun loadMemesInRecyclerView(countries: List<Country>) {
+    private fun loadCountriesInRecyclerView(countries: List<Country>) {
         fragmentCountriesBinding.countriesSuccess.rvCountries.apply {
             countriesAdapter = CountriesAdapter(activity as BaseActivity, countries)
             layoutManager = GridLayoutManager(activity, 2)

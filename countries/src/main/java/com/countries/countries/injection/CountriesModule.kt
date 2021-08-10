@@ -10,7 +10,7 @@ import retrofit2.Retrofit
 val countriesModule = module {
     factory {
         CountriesViewModel(
-            memesRepository = get()
+            countriesRepository = get()
         )
     }
     factory {

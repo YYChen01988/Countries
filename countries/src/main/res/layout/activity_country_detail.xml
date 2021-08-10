@@ -16,7 +16,7 @@
             android:id="@+id/selectedCountryName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentScrim="@color/design_default_color_secondary_variant"
+            app:contentScrim="@color/design_default_color_primary_variant"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
 
             <ImageView

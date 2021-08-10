@@ -9,14 +9,14 @@ import com.pasindulaksara.recyclergrid.Country
 import kotlinx.coroutines.launch
 
 class CountriesViewModel(
-    private val memesRepository: CountriesRepository,
+    private val countriesRepository: CountriesRepository,
 ) : ViewModel() {
     private val allCountries: MutableLiveData<Resource<List<Country>>> = MutableLiveData<Resource<List<Country>>>()
 
     fun fetchAllCountries() {
         viewModelScope.launch {
             allCountries.postValue(Resource.loading(data = null))
-            allCountries.postValue(memesRepository.getCountries())
+            allCountries.postValue(countriesRepository.getCountries())
         }
     }
 
