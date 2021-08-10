@@ -1,5 +1,5 @@
-# Memexpress
-Display random memes from https://meme-api.herokuapp.com/gimme/wholesomememes/50 (https://github.com/D3vd/Meme_Api)
+# Countries
+Display all the countries
 
 # 1. Core
 This can be accessed by all modules. Inludes utils and abstractions.
@@ -7,8 +7,8 @@ This can be accessed by all modules. Inludes utils and abstractions.
 # 2. app
 With main application and injections and access to all modules. 
 
-# 3. memes
-Provides list of memes and the titles
+# 3. countries
+Provides grid view of country flags and their names
 
 ## Gradle
 
@@ -26,7 +26,8 @@ Provides list of memes and the titles
 1. Koin(DI)
 2. Android Architecture (AndroidX,ViewModel,navigation, Lifecycle, LiveData, Coroutines)
 4. Glide 4.12.0
-5. Retrofit2, OkHttp, Gson
-6. Mockito
-7. Junit
-8. Ktlint
+5. GlideVectorYou
+6. Retrofit2, OkHttp, Gson
+7. Mockito
+8. Junit
+9. Ktlint
